@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎅 サンタクロース適性診断 🎄</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decorations"></div>
+    
+    <div class="container">
+        <header>
+            <h1>🎅 サンタクロース適性診断 🎄</h1>
+            <p class="subtitle">あなたはサンタクロースに向いている？</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div id="questions-list" class="questions-list"></div>
+            <button id="submit-btn" class="submit-btn">診断結果を見る 🎅</button>
+        </div>
+
+        <div id="result-container" class="result-container hidden">
+            <h2>診断結果</h2>
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="score-percentage" class="score-percentage">0</span>%
+                </div>
+                <p class="score-label">サンタクロース適性度</p>
+            </div>
+            
+            <div class="santa-comment">
+                <h3>🎅 サンタからのメッセージ</h3>
+                <p id="santa-language" class="santa-language"></p>
+                <p id="japanese-translation" class="japanese-translation"></p>
+            </div>
+
+            <div class="analysis-section">
+                <h3>📊 詳細分析</h3>
+                <div id="analysis-chart" class="analysis-chart"></div>
+            </div>
+
+            <div class="advice-section">
+                <h3>💡 サンタからのアドバイス</h3>
+                <p id="advice-text" class="advice-text"></p>
+            </div>
+
+            <button id="restart-btn" class="restart-btn">もう一度診断する</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
