@@ -140,39 +140,15 @@ h1 {
 
 .options-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 12px 0;
-}
-
-.options-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.option-label {
-    color: #165b33;
-    font-weight: 700;
-    font-size: 0.85em;
-    white-space: nowrap;
-    min-width: 80px;
-}
-
-.option-label:first-child {
-    text-align: left;
-}
-
-.option-label:last-child {
-    text-align: right;
+    justify-content: center;
+    margin: 15px 0;
 }
 
 .options {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 6px;
-    flex: 1;
+    gap: 8px;
 }
 
 .option-btn {
@@ -187,11 +163,12 @@ h1 {
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
+    align-self: center;
 }
 
 .option-btn[data-value="5"] {
-    width: 55px;
-    height: 55px;
+    width: 56px;
+    height: 56px;
 }
 
 .option-btn[data-value="4"] {
@@ -200,18 +177,18 @@ h1 {
 }
 
 .option-btn[data-value="3"] {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
 }
 
 .option-btn[data-value="2"] {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
 }
 
 .option-btn[data-value="1"] {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
 }
 
 .option-btn:active {
@@ -515,19 +492,14 @@ h1 {
         font-size: 1em;
     }
     
-    .option-label {
-        font-size: 0.8em;
-        min-width: 70px;
-    }
-    
     .option-btn[data-value="5"] {
-        width: 48px;
-        height: 48px;
+        width: 50px;
+        height: 50px;
     }
     
     .option-btn[data-value="4"] {
-        width: 44px;
-        height: 44px;
+        width: 45px;
+        height: 45px;
     }
     
     .option-btn[data-value="3"] {
@@ -536,13 +508,13 @@ h1 {
     }
     
     .option-btn[data-value="2"] {
-        width: 36px;
-        height: 36px;
+        width: 35px;
+        height: 35px;
     }
     
     .option-btn[data-value="1"] {
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
     }
     
     .option-btn {
@@ -550,7 +522,7 @@ h1 {
     }
     
     .options {
-        gap: 3px;
+        gap: 6px;
     }
     
     .instruction {
