@@ -29,8 +29,9 @@ body {
 
 .floating-emoji {
     position: absolute;
-    opacity: 0.15;
+    opacity: 0.25;
     animation: floatRandom 10s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes floatRandom {
@@ -132,18 +133,34 @@ h1 {
     margin: 12px 0;
 }
 
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
 .option-label {
     color: #165b33;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.85em;
-    text-align: center;
+    white-space: nowrap;
+    min-width: 80px;
+}
+
+.option-label:first-child {
+    text-align: left;
+}
+
+.option-label:last-child {
+    text-align: right;
 }
 
 .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 6px;
-    padding: 0 10px;
+    flex: 1;
 }
 
 .option-btn {
@@ -463,9 +480,23 @@ h1 {
         font-size: 1em;
     }
     
+    .option-label {
+        font-size: 0.8em;
+        min-width: 70px;
+    }
+    
     .option-btn {
-        width: 45px;
-        height: 45px;
+        width: 42px;
+        height: 42px;
+        border-width: 2px;
+    }
+    
+    .options {
+        gap: 4px;
+    }
+    
+    .floating-emoji {
+        opacity: 0.3;
     }
     
     .score-circle {

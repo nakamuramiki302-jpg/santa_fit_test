@@ -88,13 +88,15 @@ function renderQuestions() {
             <div class="question-number">質問 ${index + 1} / ${questions.length}</div>
             <div class="question-text">${question.text}</div>
             <div class="options-wrapper">
-                <span class="option-label">当てはまる</span>
-                <div class="options" data-question-id="${question.id}">
-                    ${[5, 4, 3, 2, 1].map(value =>
+                <div class="options-container">
+                    <span class="option-label">当てはまる</span>
+                    <div class="options" data-question-id="${question.id}">
+                        ${[5, 4, 3, 2, 1].map(value =>
             `<button class="option-btn" data-value="${value}"></button>`
         ).join('')}
+                    </div>
+                    <span class="option-label">当てはまらない</span>
                 </div>
-                <span class="option-label">当てはまらない</span>
             </div>
             ${question.comment ? `<div class="question-comment">${question.comment}</div>` : ''}
         `;
