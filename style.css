@@ -78,7 +78,19 @@ h1 {
 .subtitle {
     color: #165b33;
     font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.instruction {
+    color: #c41e3a;
+    font-size: 0.9em;
+    font-weight: bold;
     margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff5f5 0%, #f0fff4 100%);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid #ffd700;
+    display: inline-block;
 }
 
 .questions-list {
@@ -164,8 +176,6 @@ h1 {
 }
 
 .option-btn {
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     background: white;
     border: 3px solid #165b33;
@@ -179,6 +189,31 @@ h1 {
     flex-shrink: 0;
 }
 
+.option-btn[data-value="5"] {
+    width: 55px;
+    height: 55px;
+}
+
+.option-btn[data-value="4"] {
+    width: 50px;
+    height: 50px;
+}
+
+.option-btn[data-value="3"] {
+    width: 45px;
+    height: 45px;
+}
+
+.option-btn[data-value="2"] {
+    width: 40px;
+    height: 40px;
+}
+
+.option-btn[data-value="1"] {
+    width: 35px;
+    height: 35px;
+}
+
 .option-btn:active {
     transform: scale(0.95);
 }
@@ -186,7 +221,7 @@ h1 {
 .option-btn.selected {
     background: linear-gradient(135deg, #c41e3a 0%, #165b33 100%);
     border-color: #ffd700;
-    transform: scale(1.1);
+    transform: scale(1.15);
     box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5), 0 4px 15px rgba(196, 30, 58, 0.4);
 }
 
@@ -485,14 +520,42 @@ h1 {
         min-width: 70px;
     }
     
+    .option-btn[data-value="5"] {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .option-btn[data-value="4"] {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .option-btn[data-value="3"] {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .option-btn[data-value="2"] {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .option-btn[data-value="1"] {
+        width: 32px;
+        height: 32px;
+    }
+    
     .option-btn {
-        width: 42px;
-        height: 42px;
         border-width: 2px;
     }
     
     .options {
-        gap: 4px;
+        gap: 3px;
+    }
+    
+    .instruction {
+        font-size: 0.85em;
+        padding: 6px 12px;
     }
     
     .floating-emoji {
